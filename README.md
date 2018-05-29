@@ -8,7 +8,10 @@ In geometry, a centroidal Voronoi tessellation (CVT) is a special type of Vorono
 
 ## Getting Started
 
-- CVTGenerator is a Visual Studio 2017 solution, written in C#.
+- CVTGenerator is a Visual Studio 2017 solution, written in C#:
+    - WPF 
+    - PRISM
+    - MVVM
 
 ### Solution architecture
 <img src=http://www.sachpazidis.com/wp-content/uploads/2018/05/CVTGenerator_architecture.png alt="CVTGenerator solution architecture">
@@ -18,6 +21,8 @@ In geometry, a centroidal Voronoi tessellation (CVT) is a special type of Vorono
 - DevExpress WPF 16.2 [DevExpress](https://www.devexpress.com)
 - [OxyPlot](https://github.com/oxyplot/oxyplot/)
 - [geometry3Sharp](https://github.com/gradientspace/geometry3Sharp)
+- [fo-dicom](https://github.com/fo-dicom/fo-dicom)
+
 
 
 ### Installing
