@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="WpfCvtApp.SettingsModule.Views.VoronoiSettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfCvtApp.SettingsModule.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+            <StackPanel Margin="10,10" Orientation="Vertical">
+                
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Number of generators / catheters"></TextBlock>
+                <TextBox Text="{Binding NumberOfGenerators, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Number of sampling points"></TextBlock>
+                <TextBox Text="{Binding NumberOfSamplingPoints, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         ></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Sampling method"></TextBlock>
+                <ComboBox ItemsSource="{Binding SamplingMethods}" 
+                          SelectedValue="{Binding SelectedSamplingMethod, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                          IsReadOnly="True" 
+                          />
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

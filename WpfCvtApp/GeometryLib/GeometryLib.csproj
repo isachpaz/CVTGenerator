@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{504A0D5D-E916-4449-B81B-20D3A2202051}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeometryLib</RootNamespace>
+    <AssemblyName>GeometryLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="geometry3Sharp, Version=1.0.144.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\geometry3Sharp.1.0.144\lib\net45\geometry3Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\InOutTest.cs" />
+    <Compile Include="Helpers\Transformation.cs" />
+    <Compile Include="RandomEngines\HaltonSequence2D.cs" />
+    <Compile Include="RandomEngines\IRandom2D.cs" />
+    <Compile Include="RandomEngines\RandomEngine.cs" />
+    <Compile Include="RandomEngines\RandomEngineFactory.cs" />
+    <Compile Include="RandomEngines\UniformDistribution2D.cs" />
+    <Compile Include="Tools\BinaryMap.cs" />
+    <Compile Include="Tools\BinaryMapSettings.cs" />
+    <Compile Include="Tools\GeometryHelper.cs" />
+    <Compile Include="Tools\Offset.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Primitives\Vertex.cs" />
+    <Compile Include="Primitives\VertexCollection.cs" />
+    <Compile Include="Voronoi\CVT.cs" />
+    <Compile Include="Voronoi\CvtSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DicomLib\DicomLib.csproj">
+      <Project>{50fab78a-1c6f-4680-864b-bb3cb5c15df1}</Project>
+      <Name>DicomLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
