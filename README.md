@@ -1,17 +1,18 @@
 # CVTGenerator
 
-Produces CVT generators on a 2D close surface.
+CVTGenerator produces CVT generators on a 2D close surface.
+In geometry, a centroidal Voronoi tessellation (CVT) is a special type of Voronoi tessellation or Voronoi diagram. A Voronoi tessellation is called centroidal when the generating point of each Voronoi cell is also its mean (center of mass).
+[CVT](https://en.wikipedia.org/wiki/Centroidal_Voronoi_tessellation)
 
 <img src=http://www.sachpazidis.com/wp-content/uploads/2018/05/cvtgenerator-prostate.png alt="CVT generators in a prostate">
 
 ## Getting Started
 
-- This is a Visual Studio 2017 solution.
-- Download the source code
+- CVTGenerator is a Visual Studio 2017 solution, written in C#.
 
 ### Prerequisites
 
-- DevExpress WPF 16.2 [DevExpress](https://www.devexpress.com))
+- DevExpress WPF 16.2 [DevExpress](https://www.devexpress.com)
 - [OxyPlot](https://github.com/oxyplot/oxyplot/)
 - [geometry3Sharp](https://github.com/gradientspace/geometry3Sharp)
 
