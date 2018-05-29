@@ -2,7 +2,7 @@
 
 Produces CVT generators on a 2D close surface.
 
-<img src=http://www.sachpazidis.com/wp-content/uploads/2018/05/cvtgenerator-prostate.png alt=""CVT generators in a prostate>
+<img src=http://www.sachpazidis.com/wp-content/uploads/2018/05/cvtgenerator-prostate.png alt="CVT generators in a prostate">
 
 ## Getting Started
 
