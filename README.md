@@ -18,7 +18,7 @@ In geometry, a centroidal Voronoi tessellation (CVT) is a special type of Vorono
 
 ### Prerequisites
 
-- DevExpress WPF 16.2 [DevExpress](https://www.devexpress.com)
+- [DevExpress WPF 16.2](https://www.devexpress.com)
 - [OxyPlot](https://github.com/oxyplot/oxyplot/)
 - [geometry3Sharp](https://github.com/gradientspace/geometry3Sharp)
 - [fo-dicom](https://github.com/fo-dicom/fo-dicom)
