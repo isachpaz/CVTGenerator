@@ -14,6 +14,11 @@ namespace WpfCvtApp
     /// </summary>
     public partial class App : Application
     {
+        /// <summary>
+        /// Startupentry point
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void App_OnStartup(object sender, StartupEventArgs e)
         {
             Bootstrapper bs = new Bootstrapper();
