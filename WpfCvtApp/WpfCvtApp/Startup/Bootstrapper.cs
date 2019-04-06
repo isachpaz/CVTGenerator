@@ -36,6 +36,7 @@
 // ***********************************************************************
 #endregion
 
+using System.ComponentModel;
 using System.Windows;
 using DevExpress.Xpf.Docking;
 using Microsoft.Practices.Unity;
