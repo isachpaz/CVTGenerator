@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfCvtApp.Infrastructure.Adapters;
 using WpfCvtApp.StructureNavigationModule.ViewModels;
 
 namespace WpfCvtApp.StructureNavigationModule.Views
@@ -20,7 +19,7 @@ namespace WpfCvtApp.StructureNavigationModule.Views
     /// <summary>
     /// Interaction logic for StructureNavigationView.xaml
     /// </summary>
-    public partial class StructureNavigationView : UserControl, IPanelInfo
+    public partial class StructureNavigationView : UserControl
     {
         public StructureNavigationView(StructureNavigationViewModel navigationViewModel)
         {

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Prism.Events;
+using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 using WpfCvtApp.Infrastructure;
@@ -28,6 +29,16 @@ namespace WpfCvtApp.StructureNavigationModule
             {
                 RegionManager.RegisterViewWithRegion(RegionNames.LeftRegion, typeof(StructureNavigationView));
             }
+        }
+
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
+            throw new NotImplementedException();
         }
     }
 }

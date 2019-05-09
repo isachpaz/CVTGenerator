@@ -13,14 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfCvtApp.GraphModule.ViewModels;
-using WpfCvtApp.Infrastructure.Adapters;
 
 namespace WpfCvtApp.GraphModule.Views
 {
     /// <summary>
     /// Interaction logic for GraphView.xaml
     /// </summary>
-    public partial class GraphView : UserControl, IPanelInfo
+    public partial class GraphView : UserControl
     {
         public GraphView(GraphViewModel graphViewModel)
         {

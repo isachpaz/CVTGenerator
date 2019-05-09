@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryLib", "GeometryLib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCvtApp.SettingsModule", "WpfCvtApp.SettingsModule\WpfCvtApp.SettingsModule.csproj", "{1E082472-2CFC-4DC0-9A9C-2CF56AD1BAC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryLib.Tests", "GeometryLib.Tests\GeometryLib.Tests.csproj", "{BF103D4C-61DC-4A7F-9BD4-6B93CAE02A73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{1E082472-2CFC-4DC0-9A9C-2CF56AD1BAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E082472-2CFC-4DC0-9A9C-2CF56AD1BAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E082472-2CFC-4DC0-9A9C-2CF56AD1BAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF103D4C-61DC-4A7F-9BD4-6B93CAE02A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF103D4C-61DC-4A7F-9BD4-6B93CAE02A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF103D4C-61DC-4A7F-9BD4-6B93CAE02A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF103D4C-61DC-4A7F-9BD4-6B93CAE02A73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{50FAB78A-1C6F-4680-864B-BB3CB5C15DF1} = {65E66379-4FD4-4CAE-9498-BAF3AF88D09F}
 		{504A0D5D-E916-4449-B81B-20D3A2202051} = {01E3D24F-30B3-4DA1-A788-9BEA8E5F943F}
+		{BF103D4C-61DC-4A7F-9BD4-6B93CAE02A73} = {01E3D24F-30B3-4DA1-A788-9BEA8E5F943F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF564D8F-3C49-49CC-B968-DE086C1EE4E4}

@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfCvtApp.Infrastructure.Adapters;
 using WpfCvtApp.SettingsModule.ViewModels;
 
 namespace WpfCvtApp.SettingsModule.Views
@@ -20,7 +19,7 @@ namespace WpfCvtApp.SettingsModule.Views
     /// <summary>
     /// Interaction logic for VoronoiSettingsView.xaml
     /// </summary>
-    public partial class VoronoiSettingsView : UserControl, IPanelInfo
+    public partial class VoronoiSettingsView : UserControl
     {
         public VoronoiSettingsView(VoronoiSettingsViewModel voronoiSettingsViewModel)
         {

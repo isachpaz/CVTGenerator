@@ -12,7 +12,7 @@ namespace WpfCvtApp.Infrastructure.Data
 
         public List<string> SamplingMethods { get; set; }
 
-        public RandomEngine SelectedSamplingMethod { get; set; }
+        public RandomEngineType SelectedSamplingMethod { get; set; }
 
         public VoronoiSettings()
         {
@@ -24,9 +24,9 @@ namespace WpfCvtApp.Infrastructure.Data
         {
             NumberOfGenerators = 20;
             NumberOfSamplingPoints = 10000;
-            SelectedSamplingMethod = RandomEngine.HALTONSEQUENCE;
+            SelectedSamplingMethod = RandomEngineType.HALTONSEQUENCE;
             SamplingMethods.Clear();
-            foreach (var item in Enum.GetNames(typeof(RandomEngine)) )
+            foreach (var item in Enum.GetNames(typeof(RandomEngineType)) )
             {
                 SamplingMethods.Add(item);
             }

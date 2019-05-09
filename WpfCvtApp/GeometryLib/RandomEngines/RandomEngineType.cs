@@ -1,6 +1,6 @@
 ﻿namespace GeometryLib.RandomEngines
 {
-    public enum RandomEngine
+    public enum RandomEngineType
     {
         UNIFORMDISTRIBUTION =0,
         HALTONSEQUENCE =1,

@@ -79,7 +79,7 @@ namespace WpfCvtApp.SettingsModule.ViewModels
                 if (_selectedSamplingMethod != value)
                 {
                     _selectedSamplingMethod = value;
-                    RandomEngine re = (RandomEngine)Enum.Parse(typeof(RandomEngine), _selectedSamplingMethod, true);
+                    RandomEngineType re = (RandomEngineType)Enum.Parse(typeof(RandomEngineType), _selectedSamplingMethod, true);
                     SettingsDataService.VoronoiSettings.SelectedSamplingMethod = re;
                     OnPropertyChanged();
                 }

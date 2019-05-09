@@ -38,13 +38,11 @@
 
 using System.ComponentModel;
 using System.Windows;
-using DevExpress.Xpf.Docking;
 using Microsoft.Practices.Unity;
 using Prism.Modularity;
 using Prism.Regions;
 using Prism.Unity;
 using WpfCvtApp.GraphModule.ViewModels;
-using WpfCvtApp.Infrastructure.Adapters;
 using WpfCvtApp.Infrastructure.DataServices;
 using WpfCvtApp.SettingsModule.ViewModels;
 using WpfCvtApp.StructureNavigationModule.ViewModels;
